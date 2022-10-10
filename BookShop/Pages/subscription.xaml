@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BookShop.Pages.subscription"
+             Title="subscription"
+             BackgroundColor="{AppThemeBinding Dark={StaticResource Gray900}, Light={StaticResource Gray300}}">
+    <VerticalStackLayout>
+        <Grid RowDefinitions="*,*,*,*,*,*,*" ColumnDefinitions="*,*" Margin="15" RowSpacing="20">
+            <Label Text="1 months" Style="{StaticResource Label}" Grid.Column="0" Grid.Row="0"/>
+            <Button Text="Purchase" Style="{StaticResource Key=GrayButton}" Grid.Row="0" Grid.Column="1"/>
+
+            <Label Text="3 months" Style="{StaticResource Label}" Grid.Column="0" Grid.Row="1"/>
+            <Button Text="Purchase" Style="{StaticResource Key=GrayButton}" Grid.Row="1" Grid.Column="1"/>
+
+            <Label Text="6 months" Style="{StaticResource Label}" Grid.Column="0" Grid.Row="2"/>
+            <Button Text="Purchase" Style="{StaticResource Key=GrayButton}" Grid.Row="2" Grid.Column="1"/>
+
+            <Label Text="1 year" Style="{StaticResource Label}" Grid.Column="0" Grid.Row="3"/>
+            <Button Text="Purchase" Style="{StaticResource Key=GrayButton}" Grid.Row="3" Grid.Column="1"/>
+
+            <Label Text="2 years" Style="{StaticResource Label}" Grid.Column="0" Grid.Row="4"/>
+            <Button Text="Purchase" Style="{StaticResource Key=GrayButton}" Grid.Row="4" Grid.Column="1"/>
+
+
+            <Label Text="Get 30% off on 1 year &amp; 2 years subscription. &#x0a; Refund within a week."
+                   Style="{StaticResource Label}" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="6"
+                   BackgroundColor="{StaticResource Gray900}"/>
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

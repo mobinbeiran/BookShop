@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BookShop.Pages.AudioBooks"
+             Title="AudioBooks">
+
+    <ScrollView>
+        <Grid RowDefinitions="*,*,*,*,*,*,*" ColumnDefinitions="*,*,*" RowSpacing="-15" 
+              BackgroundColor="{AppThemeBinding Dark={StaticResource Gray500}, Light={StaticResource Gray600}}">
+            
+            <ImageButton Style="{StaticResource Key=audio}" Grid.Row="0" Grid.Column="0" Margin="10,20,10,20"/>
+            <ImageButton Style="{StaticResource Key=audio}" Grid.Row="0" Grid.Column="1" Margin="10,20,10,20"/>
+            <ImageButton Style="{StaticResource Key=audio}" Grid.Row="0" Grid.Column="2" Margin="10,20,10,20"/>
+            <ImageButton Style="{StaticResource Key=audio}" Grid.Row="1" Grid.Column="0" Margin="10,20,10,20"/>
+            <ImageButton Style="{StaticResource Key=audio}" Grid.Row="1" Grid.Column="1" Margin="10,20,10,20"/>
+            <ImageButton Style="{StaticResource Key=audio}" Grid.Row="1" Grid.Column="2" Margin="10,20,10,20"/>
+
+            <ImageButton Style="{StaticResource Key=audio}" Grid.Row="2" Grid.Column="0" Margin="10,20,10,20"/>
+            <ImageButton Style="{StaticResource Key=audio}" Grid.Row="2" Grid.Column="1" Margin="10,20,10,20"/>
+            <ImageButton Style="{StaticResource Key=audio}" Grid.Row="2" Grid.Column="2" Margin="10,20,10,20"/>
+            <ImageButton Style="{StaticResource Key=audio}" Grid.Row="3" Grid.Column="0" Margin="10,20,10,20"/>
+            <ImageButton Style="{StaticResource Key=audio}" Grid.Row="3" Grid.Column="1" Margin="10,20,10,20"/>
+            <ImageButton Style="{StaticResource Key=audio}" Grid.Row="3" Grid.Column="2" Margin="10,20,10,20"/>
+
+            <ImageButton Style="{StaticResource Key=audio}" Grid.Row="4" Grid.Column="0" Margin="10,20,10,20"/>
+            <ImageButton Style="{StaticResource Key=audio}" Grid.Row="4" Grid.Column="1" Margin="10,20,10,20"/>
+            <ImageButton Style="{StaticResource Key=audio}" Grid.Row="4" Grid.Column="2" Margin="10,20,10,20"/>
+            <ImageButton Style="{StaticResource Key=audio}" Grid.Row="5" Grid.Column="0" Margin="10,20,10,20"/>
+            <ImageButton Style="{StaticResource Key=audio}" Grid.Row="5" Grid.Column="1" Margin="10,20,10,20"/>
+            <ImageButton Style="{StaticResource Key=audio}" Grid.Row="5" Grid.Column="2" Margin="10,20,10,20"/>
+            
+        </Grid>
+    </ScrollView>
+    
+</ContentPage>

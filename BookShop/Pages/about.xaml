@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BookShop.Pages.About"
+             Title="About" Shell.NavBarIsVisible="False" BackgroundColor="{AppThemeBinding Dark={StaticResource Gray900}, Light={StaticResource Gray300}}">
+    <ScrollView>
+        <Grid RowDefinitions="*,*,*,*,*,*,*,*,*,*,*" ColumnDefinitions="*,*" Margin="10,0,10,0">
+            <Button Text="->" Style="{StaticResource title}" Grid.Row="0" Grid.Column="1" Clicked="Button_Clicked"/>
+            <Label Text="About Us" Style="{StaticResource Label}" Grid.Row="0" Grid.Column="0" Padding="10,15,10,15"/>
+            <BoxView Style="{StaticResource BoxVeiw}" Grid.Row="1" Grid.ColumnSpan="2"/>
+
+            <Label Text="Version 1.0.0.0" Style="{StaticResource Label}" Grid.Row="2" Grid.ColumnSpan="2"
+               TextColor="{StaticResource LightBlue}" HorizontalOptions="Center" Margin="10,10,10,0"/>
+            <Button Text="Update" Style="{StaticResource BlueButton}" Grid.Row="3" Grid.ColumnSpan="2"
+                HorizontalOptions="Center" Margin="10,0,10,0"/>
+
+            <Label Text="About BookShop" Style="{StaticResource Label}" Grid.Column="0" Grid.Row="5" TextColor="{StaticResource LightBlue}"/>
+            <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eleifend tincidunt consectetur. Duis ut luctus lacus, non porta orci."
+               Style="{StaticResource Label}" Grid.ColumnSpan="2" Grid.Row="6" Grid.RowSpan="2"/>
+
+            <Label Text="BookShop Subscription" Style="{StaticResource Label}" Grid.Column="0" Grid.Row="8" TextColor="{StaticResource LightBlue}"/>
+            <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eleifend tincidunt consectetur. Duis ut luctus lacus, non porta orci."
+               Style="{StaticResource Label}" Grid.ColumnSpan="2" Grid.Row="9" Grid.RowSpan="2"/>
+        </Grid>
+    </ScrollView>
+</ContentPage>

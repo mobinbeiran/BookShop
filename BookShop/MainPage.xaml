@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BookShop.MainPage" Shell.NavBarIsVisible="False"
+             BackgroundColor="{AppThemeBinding Dark={StaticResource Gray900}, Light={StaticResource Gray300}}">
+
+    <ScrollView x:Name="scrol">
+        <!--titles-->
+        <Grid Margin="0,0,0,50" BackgroundColor="{AppThemeBinding Dark={StaticResource Gray900}, Light={StaticResource Gray300}}"
+          RowDefinitions="*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*" ColumnDefinitions="*,*" Padding="20">
+
+            <Button Grid.Row="0" Grid.Column="0" Text="Grouping" Style="{StaticResource Key=BlueButton}" Clicked="Button_Clicked"/>
+            <Button x:Name="top" Grid.Row="0" Grid.Column="1" Text="BookShop" Style="{StaticResource Key=title}" Clicked="top_Clicked"/>
+
+            <!--horizental scrollview buttons-->
+            <ScrollView Grid.Row="1" Grid.ColumnSpan="2" Style="{StaticResource Key=ScrollView}">
+                <Grid RowDefinitions="*" ColumnDefinitions="*,*,*,*,*,*">
+                    <Button Text="AudioBooks >" Grid.Row="0" Grid.Column="0" Style="{StaticResource HorScrlButtons}" Clicked="Button_Clicked_1"/>
+                    <Button Text="FreeBooks >" Grid.Row="0" Grid.Column="1" Style="{StaticResource HorScrlButtons}" Clicked="Button_Clicked_2"/>
+                    <Button Text="HotOffers >" Grid.Row="0" Grid.Column="2" Style="{StaticResource HorScrlButtons}" Clicked="Button_Clicked_3"/>
+                    <Button Text="Podcasts >" Grid.Row="0" Grid.Column="3" Style="{StaticResource HorScrlButtons}" Clicked="Button_Clicked_4"/>
+                    <Button Text="Subscription >" Grid.Row="0" Grid.Column="4" Style="{StaticResource HorScrlButtons}" Clicked="Button_Clicked_5"/>
+                    <Button Text="Ebooks >" Grid.Row="0" Grid.Column="5" Style="{StaticResource HorScrlButtons}" Clicked="Button_Clicked_6"/>
+                </Grid>
+            </ScrollView>
+
+            <!--horizental scrollview buttons-->
+            <ScrollView Grid.Row="2" Grid.ColumnSpan="2" Style="{StaticResource Key=ScrollView}">
+                <Grid RowDefinitions="*" ColumnDefinitions="*,*,*,*,*,*">
+                    <ImageButton Style="{StaticResource Key=images}" Grid.Row="0" Grid.Column="0" Clicked="ImageButton_Clicked"/>
+                    <ImageButton Style="{StaticResource Key=images}" Grid.Row="0" Grid.Column="1" Clicked="ImageButton_Clicked_1"/>
+                    <ImageButton Style="{StaticResource Key=images}" Grid.Row="0" Grid.Column="2" Clicked="ImageButton_Clicked_2"/>
+                    <ImageButton Style="{StaticResource Key=images}" Grid.Row="0" Grid.Column="3" Clicked="ImageButton_Clicked_3"/>
+                </Grid>
+            </ScrollView>
+
+
+            <!--2 boxveiws and 3 buttons-->
+            <BoxView Style="{StaticResource Key=BoxVeiw}" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"/>
+
+            <Button Text="Audio Books" Style="{StaticResource Key=ListViewbuttons}"
+                                 Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Margin="5,10,5,0" Clicked="Button_Clicked_7"/>
+            <Button Text=">" Style="{StaticResource Key=ListViewbuttons}" HorizontalOptions="End"
+                                 Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Margin="5,10,5,0"/>
+ 
+            <Button Text="HotOffers" Style="{StaticResource Key=ListViewbuttons}"
+                                 Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Margin="5,10,5,0" Clicked="Button_Clicked_8"/>
+            <Button Text=">" Style="{StaticResource Key=ListViewbuttons}" HorizontalOptions="End"
+                                 Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" Margin="5,10,5,0"/>
+
+            <Button Text="BookShop Podcast" Style="{StaticResource Key=ListViewbuttons}"
+                                 Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Margin="5,10,5,0" Clicked="Button_Clicked_9"/>
+            <Button Text=">" Style="{StaticResource Key=ListViewbuttons}" HorizontalOptions="End"
+                                 Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" Margin="5,10,5,0"/>
+
+            <BoxView Style="{StaticResource Key=BoxVeiw}" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2"/>
+
+
+            <!--label and button for story and novel section-->
+            <Label Text="Discounts on story books and novels" Style="{StaticResource Key=Label}" Margin="5,15,5,0"
+                   Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2"/>
+            
+            <Label Text="for limited time" Style="{StaticResource Key=Label}" Margin="5,5,5,5"
+                    TextColor="{AppThemeBinding Dark={StaticResource Gray500}, Light={StaticResource Gray600}}"
+                   FontSize="16" Grid.Row="9" Grid.Column="0"/>
+            <Button Text="More >" Style="{StaticResource Key=GrayButton}" Grid.Row="9" Grid.Column="1" HorizontalOptions="End"
+                    Clicked="Button_Clicked_10"/>
+            
+            
+            <!--horizental scrollview for books-->
+            <ScrollView Margin="0,0,0,15" Grid.Row="10" Grid.ColumnSpan="2" Style="{StaticResource Key=ScrollView}">
+                <Grid RowDefinitions="*,*" ColumnDefinitions="*,*,*,*,*,*">
+                    <ImageButton Style="{StaticResource Key=books}" Grid.Row="0" Grid.Column="0" Clicked="ImageButton_Clicked_4"/>
+                    <ImageButton Style="{StaticResource Key=books}" Grid.Row="0" Grid.Column="1" Clicked="ImageButton_Clicked_5"/>
+                    <ImageButton Style="{StaticResource Key=books}" Grid.Row="0" Grid.Column="2" Clicked="ImageButton_Clicked_6"/>
+                    <ImageButton Style="{StaticResource Key=books}" Grid.Row="0" Grid.Column="3" Clicked="ImageButton_Clicked_7"/>
+
+                    <ImageButton Style="{StaticResource Key=books}" Grid.Row="1" Grid.Column="0" Margin="0,10,5,10"
+                                 Clicked="ImageButton_Clicked_8"/>
+                    <ImageButton Style="{StaticResource Key=books}" Grid.Row="1" Grid.Column="1" Margin="0,10,5,10"
+                                 Clicked="ImageButton_Clicked_9"/>
+                    <ImageButton Style="{StaticResource Key=books}" Grid.Row="1" Grid.Column="2" Margin="0,10,5,10"
+                                 Clicked="ImageButton_Clicked_10"/>
+                    <ImageButton Style="{StaticResource Key=books}" Grid.Row="1" Grid.Column="3" Margin="0,10,5,10"
+                                 Clicked="ImageButton_Clicked_11"/>
+                </Grid>
+            </ScrollView>
+
+
+            <!--label and button for saved section-->
+            <Label Text="Saved Books" Style="{StaticResource Key=Label}" Margin="5,15,5,0"
+                   Grid.Row="11" Grid.Column="0"/>
+            <Button Text="More >" Style="{StaticResource Key=GrayButton}" Grid.Row="11" Grid.Column="1" HorizontalOptions="End"
+                    Clicked="Button_Clicked_11"/>
+
+            <!--horizental scrollview buttons-->
+            <ScrollView Grid.Row="12" Grid.ColumnSpan="2" Style="{StaticResource Key=ScrollView}">
+                <Grid RowDefinitions="*" ColumnDefinitions="*,*,*,*,*,*">
+                    <ImageButton Style="{StaticResource Key=images}" Grid.Row="3" Grid.Column="0" Clicked="ImageButton_Clicked_12"/>
+                    <ImageButton Style="{StaticResource Key=images}" Grid.Row="3" Grid.Column="1" Clicked="ImageButton_Clicked_13"/>
+                    <ImageButton Style="{StaticResource Key=images}" Grid.Row="3" Grid.Column="2" Clicked="ImageButton_Clicked_14"/>
+                    <ImageButton Style="{StaticResource Key=images}" Grid.Row="3" Grid.Column="3" Clicked="ImageButton_Clicked_15"/>
+                </Grid>
+            </ScrollView>
+
+
+            <!--label and button for audio books section-->
+            <Label Text="Top Audio Books" Style="{StaticResource Key=Label}" Margin="5,15,5,0"
+                   Grid.Row="13" Grid.Column="0"/>
+            <Button Text="More >" Style="{StaticResource Key=GrayButton}" Grid.Row="13" Grid.Column="1" HorizontalOptions="End"
+                    Clicked="Button_Clicked_12"/>
+
+            <!--horizental scrollview buttons-->
+            <ScrollView Grid.Row="14" Grid.ColumnSpan="2" Style="{StaticResource Key=ScrollView}">
+                <Grid RowDefinitions="*" ColumnDefinitions="*,*,*,*,*,*">
+                    <ImageButton Style="{StaticResource Key=audio}" Grid.Row="3" Grid.Column="0" Clicked="ImageButton_Clicked_16"/>
+                    <ImageButton Style="{StaticResource Key=audio}" Grid.Row="3" Grid.Column="1" Clicked="ImageButton_Clicked_17"/>
+                    <ImageButton Style="{StaticResource Key=audio}" Grid.Row="3" Grid.Column="2" Clicked="ImageButton_Clicked_18"/>
+                    <ImageButton Style="{StaticResource Key=audio}" Grid.Row="3" Grid.Column="3" Clicked="ImageButton_Clicked_19"/>
+                    <ImageButton Style="{StaticResource Key=audio}" Grid.Row="3" Grid.Column="4" Clicked="ImageButton_Clicked_20"/>
+                    <ImageButton Style="{StaticResource Key=audio}" Grid.Row="3" Grid.Column="5" Clicked="ImageButton_Clicked_21"/>
+                </Grid>
+            </ScrollView>
+
+
+        </Grid>
+    </ScrollView>
+</ContentPage>

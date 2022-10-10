@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BookShop.Pages.grouping"
+             Title="grouping" BackgroundColor="{AppThemeBinding Dark={StaticResource Gray900}, Light={StaticResource Gray300}}">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Button Text="art" Style="{StaticResource title}" HorizontalOptions="Center" VerticalOptions="Start"/>
+            <Button Text="English" Style="{StaticResource title}" HorizontalOptions="Center" VerticalOptions="Start"/>
+            <Button Text="news" Style="{StaticResource title}" HorizontalOptions="Center" VerticalOptions="Start"/>
+            <Button Text="history" Style="{StaticResource title}" HorizontalOptions="Center" VerticalOptions="Start"/>
+            <Button Text="science" Style="{StaticResource title}" HorizontalOptions="Center" VerticalOptions="Start"/>
+            <Button Text="persian" Style="{StaticResource title}" HorizontalOptions="Center" VerticalOptions="Start"/>
+            <Button Text="story &amp; novel" Style="{StaticResource title}" HorizontalOptions="Center" VerticalOptions="Start"/>
+            <Button Text="memories" Style="{StaticResource title}" HorizontalOptions="Center" VerticalOptions="Start"/>
+            <Button Text="engineering" Style="{StaticResource title}" HorizontalOptions="Center" VerticalOptions="Start"/>
+            <Button Text="children" Style="{StaticResource title}" HorizontalOptions="Center" VerticalOptions="Start"/>
+            <Button Text="comic" Style="{StaticResource title}" HorizontalOptions="Center" VerticalOptions="Start"/>
+            <Button Text="management" Style="{StaticResource title}" HorizontalOptions="Center" VerticalOptions="Start"/>
+            <Button Text="dutch" Style="{StaticResource title}" HorizontalOptions="Center" VerticalOptions="Start"/>
+            <Button Text="french" Style="{StaticResource title}" HorizontalOptions="Center" VerticalOptions="Start"/>
+            <Button Text="children" Style="{StaticResource title}" HorizontalOptions="Center" VerticalOptions="Start"/>
+            <Button Text="comic" Style="{StaticResource title}" HorizontalOptions="Center" VerticalOptions="Start"/>
+            <Button Text="management" Style="{StaticResource title}" HorizontalOptions="Center" VerticalOptions="Start"/>
+            <Button Text="dutch" Style="{StaticResource title}" HorizontalOptions="Center" VerticalOptions="Start"/>
+            <Button Text="french" Style="{StaticResource title}" HorizontalOptions="Center" VerticalOptions="Start"/>
+            <Button Text="children" Style="{StaticResource title}" HorizontalOptions="Center" VerticalOptions="Start"/>
+            <Button Text="comic" Style="{StaticResource title}" HorizontalOptions="Center" VerticalOptions="Start"/>
+            <Button Text="management" Style="{StaticResource title}" HorizontalOptions="Center" VerticalOptions="Start"/>
+            <Button Text="dutch" Style="{StaticResource title}" HorizontalOptions="Center" VerticalOptions="Start"/>
+            <Button Text="french" Style="{StaticResource title}" HorizontalOptions="Center" VerticalOptions="Start"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
