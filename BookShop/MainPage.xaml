@@ -4,6 +4,7 @@
              x:Class="BookShop.MainPage" Shell.NavBarIsVisible="False"
              BackgroundColor="{AppThemeBinding Dark={StaticResource Gray900}, Light={StaticResource Gray300}}">
 
+
     <ScrollView x:Name="scrol">
         <!--titles-->
         <Grid Margin="0,0,0,50" BackgroundColor="{AppThemeBinding Dark={StaticResource Gray900}, Light={StaticResource Gray300}}"

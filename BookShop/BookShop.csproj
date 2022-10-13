@@ -52,7 +52,23 @@
 	  <None Remove="Resources\Fonts\timess.ttf" />
 	  <None Remove="Resources\Images\audio.png" />
 	  <None Remove="Resources\Images\book.png" />
+	  <None Remove="Resources\Images\home.svg" />
 	  <None Remove="Resources\Images\pic.png" />
+	  <None Remove="Resources\Images\search.svg" />
+	  <None Remove="Resources\Images\settings.svg" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Syncfusion.Maui.TabView" Version="20.3.49" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="SearchPage.xaml.cs">
+	    <DependentUpon>SearchPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="SettingsPage.xaml.cs">
+	    <DependentUpon>SettingsPage.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -81,6 +97,12 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\subscription.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="SearchPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="SettingsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

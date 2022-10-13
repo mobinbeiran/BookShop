@@ -11,4 +11,23 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
+
+    <Application.MainPage>
+        <Shell>
+            <TabBar Style="{StaticResource Key=TabBar}" x:Name="BookShop">
+                <Tab Title="Home" Icon="Home.svg">
+                    <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
+                </Tab>
+
+                <Tab Title="Settings" Icon="Settings.svg">
+                    <ShellContent ContentTemplate="{DataTemplate local:SettingsPage}"/>
+                </Tab>
+
+                <Tab Title="Search" Icon="search.svg">
+                    <ShellContent ContentTemplate="{DataTemplate local:SearchPage}"/>
+                </Tab>
+            </TabBar>
+        </Shell>
+    </Application.MainPage>
+
 </Application>

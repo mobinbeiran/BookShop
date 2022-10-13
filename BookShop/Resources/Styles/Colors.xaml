@@ -7,6 +7,7 @@
     
     <!--mine-->
 
+    <Color x:Key="notLightBlue">#216e6e</Color>
     <Color x:Key="LightBlue">#2c9c9c</Color>
     <LinearGradientBrush x:Key="gradient" StartPoint="0,0"
                      EndPoint="1,1">
@@ -19,6 +20,7 @@
     </LinearGradientBrush>
     <!--default colors-->
 
+    <Color x:Key="colorPrimaryDark">#2c9c9c</Color>
     <Color x:Key="Primary">#512BD4</Color>
     <Color x:Key="Secondary">#DFD8F7</Color>
     <Color x:Key="Tertiary">#2B0B98</Color>

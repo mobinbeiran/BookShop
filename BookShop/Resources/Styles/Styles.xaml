@@ -4,6 +4,15 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
+    <!--tab bar-->
+    <Style x:Key="TabBar" TargetType="TabBar">
+        <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource notLightBlue}"/>
+        <Setter Property="Shell.TabBarDisabledColor" Value="{StaticResource notLightBlue}"/>
+        <Setter Property="Shell.TabBarForegroundColor" Value="{StaticResource White}"/>
+        <Setter Property="Shell.TabBarTitleColor" Value="{StaticResource White}"/>
+        <Setter Property="Shell.TabBarUnselectedColor" Value="{StaticResource LightBlue}"/>
+    </Style>
+    
     <!--mine-->
     <!--upperside-->
     <Style x:Key="BlueButton" TargetType="Button">

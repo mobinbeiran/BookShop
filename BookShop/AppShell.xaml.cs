@@ -1,4 +1,6 @@
-﻿namespace BookShop;
+﻿using BookShop.Pages;
+
+namespace BookShop;
 
 public partial class AppShell : Shell
 {
